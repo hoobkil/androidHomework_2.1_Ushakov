@@ -3,6 +3,6 @@
     <string name="Username">Имя пользователя</string>
     <string name="Subscribe">Подписаться</string>
     <string name="Clear">Очистить</string>
-    <string name="Password">Пароль</string>
+    <string name="Email">Электронная почта</string>
     <string name="Subscription">Подписка</string>
 </resources>
