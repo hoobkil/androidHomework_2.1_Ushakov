@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView alertMessage;
     private EditText username;
     private EditText email;
+    private String successMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String inputUserName = username.getText().toString();
                 String inputEmail = email.getText().toString();
-                alertMessage.setText(String.format("Подписка на рассылку успешно оформлена для" +
-                        " пользователя %s на электронный адрес %s", inputUserName, inputEmail));
+                successMessage = getString(R.string.successMessage, inputUserName, inputEmail);
+                alertMessage.setText(successMessage);
             }
         });
         clearButton.setOnClickListener(new View.OnClickListener() {
